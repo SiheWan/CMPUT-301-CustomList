@@ -68,6 +68,15 @@ public class CustomList extends ArrayAdapter<City> {
             return false;
     }
 
+    /**
+     * This method is used to remove item from the list,
+     * @param city object
+     */
+    public void delete(City city){
+        return;
+    }
+
+
 
 
 }

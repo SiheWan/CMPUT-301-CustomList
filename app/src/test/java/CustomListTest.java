@@ -30,5 +30,15 @@ public class CustomListTest {
         assertEquals(true,list.hasCity(citytest1));//5
     }
 
+    @Test
+    public void deleteCityTest() {
+        City citytest1=new City("Halifax", "NS");
+        list.addCity(citytest1);
+        list.delete(citytest1);
+        assertEquals(false,list.hasCity(citytest1));//5
+    }
+
+
+
 
 }
