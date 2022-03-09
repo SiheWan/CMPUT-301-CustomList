@@ -80,6 +80,15 @@ public class CustomList extends ArrayAdapter<City> {
         else throw new IllegalArgumentException();
     }
 
+    /**
+     * This method is used to count how many cities are in the list
+     * @return the size of the cities list
+     */
+    public int countCities(){
+        return 0;
+    }
+
+
 
 
 

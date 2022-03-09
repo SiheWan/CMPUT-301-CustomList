@@ -27,7 +27,7 @@ public class CustomListTest {
     public void hasCityTest() {
         City citytest1=new City("Halifax", "NS");
         list.addCity(citytest1);
-        assertEquals(true,list.hasCity(citytest1));//5
+        assertEquals(true,list.hasCity(citytest1));
     }
 
     @Test
@@ -35,7 +35,18 @@ public class CustomListTest {
         City citytest1=new City("Halifax", "NS");
         list.addCity(citytest1);
         list.delete(citytest1);
-        assertEquals(false,list.hasCity(citytest1));//5
+        assertEquals(false,list.hasCity(citytest1));
+    }
+
+    @Test
+    public void countCityTest() {
+        City citytest1=new City("Halifax", "NS");
+        City citytest2=new City("Edmonton", "AB");
+        City citytest3=new City("Red deer", "AB");
+        list.addCity(citytest1);
+        list.addCity(citytest2);
+        list.addCity(citytest3);
+        assertEquals(3,list.countCities());
     }
 
 
